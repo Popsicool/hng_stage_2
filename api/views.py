@@ -11,9 +11,6 @@ def getData(request):
 
     if request.method == 'POST':
         operation = request.data
-        if (type(operation['x']) is not int or type(operation['y']) is not int):
-            result = {"details": "X and Y must be integers only"}
-            return Response(result)
         if (operation['operation_type'] not in ["addition", "subtraction", "multiplication"]):
             string = operation['operation_type']
             string = string.split()
