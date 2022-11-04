@@ -16,7 +16,7 @@ def getData(request):
             string = string.split()
             sign = 0
             for i in string:
-                if i.lower() in ["addition", "additions", 'add', 'adds' "plus", "adding", "plusing", "summation"]:
+                if i.lower() in ["addition", "additions", 'add', 'adds', "plus", "adding", "plusing", "summation"]:
                     sign = 1
                     break
                 elif i in ["subtract", "subtracts", "subtraction", "minus", "remove", "deduct","subtractions", "deduction", "subtracting", "less"]:
